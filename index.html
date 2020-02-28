@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="loan.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="hold-content-div">
+            <div class="content-div">
+                <p class="rel"> LEEPs LOAN-CAL</p>
+
+                <div id="hold-text">
+                    <div id="check-div">
+                        <span class="en"> Enter Interest:</span><input v-model.Number="rate" id="txt" type="number" class="txt" placeholder="Interest" required />
+                    </div>
+                    <div> <span class="en"> Enter principal:</span> <input v-model.Number="principal" type="number" class="txt" placeholder="Principal" required />
+                    </div>
+                    <div><span class="en">Enter duration:</span><input v-on:keyUp="calculate(rate,principal,time)" v-model.Number="time" type="number" class="txt" placeholder=" Duration" required />
+                    </div>
+
+                    <div id="result">
+                        {{message}}
+                    </div>
+
+                </div>
+                <div class="note"> &copy; 2020 Leeps.org</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="loan.js"></script>
+</body>
+
+</html>

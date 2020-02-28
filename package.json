@@ -1,0 +1,19 @@
+{
+  "name": "vue_si",
+  "version": "1.0.0",
+  "description": "simple interest with vue js",
+  "main": "loan.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talk2shittuyasir/vue_SI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talk2shittuyasir/vue_SI/issues"
+  },
+  "homepage": "https://github.com/talk2shittuyasir/vue_SI#readme"
+}
